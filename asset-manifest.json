@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/apoena_front_end/static/css/main.e6c13ad2.css",
+    "main.js": "/apoena_front_end/static/js/main.d8ee8b7f.js",
+    "static/js/787.f5dcaafa.chunk.js": "/apoena_front_end/static/js/787.f5dcaafa.chunk.js",
+    "static/media/card_comparativo.png": "/apoena_front_end/static/media/card_comparativo.5e2d7baeec2ddfef1a21.png",
+    "index.html": "/apoena_front_end/index.html",
+    "main.e6c13ad2.css.map": "/apoena_front_end/static/css/main.e6c13ad2.css.map",
+    "main.d8ee8b7f.js.map": "/apoena_front_end/static/js/main.d8ee8b7f.js.map",
+    "787.f5dcaafa.chunk.js.map": "/apoena_front_end/static/js/787.f5dcaafa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.d8ee8b7f.js"
+  ]
+}
