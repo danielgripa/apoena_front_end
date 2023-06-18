@@ -3,6 +3,7 @@ import Header from "../components/Header/Header";
 //import Titulo from "../components/Titulo/Titulo";
 //import Icone from "../imagens/meios_de_pagamentos.png";
 import Faturas from "../components/Faturas/Faturas";
+import Table from "../components/AgGrid/tabela"
 import Clientes from "../components/Clientes/Clientes";
 import { ContainerFaturas, ContainerClientes } from "./Style";
 import { useState } from "react";
@@ -45,7 +46,7 @@ const MeiosDePagamentos = () => {
             </Container_Header>
 
             <ContainerFaturas className={`${MenuAberto ? 'menuAberto' : ''} ${faturasVisiveis ? '' : 'oculto'}`}>
-                <Faturas/>
+                <Table/>
             </ContainerFaturas>
 
             <Container_Header className={`${MenuAberto ? 'menuAberto' : ''} ${clientesVisiveis ? '' : 'oculto'}`}>
