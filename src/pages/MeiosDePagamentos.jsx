@@ -88,7 +88,7 @@ const MeiosDePagamentos = () => {
             </Div>
 
             <Container_Header className={`${MenuAberto ? 'menuAberto' : ''} ${novoClienteVisivel ? '' : 'oculto'}`}>
-                <TituloHeader_pgto>Emissão de Novos Clientes II</TituloHeader_pgto>
+                <TituloHeader_pgto>Emissão de Novos Clientes</TituloHeader_pgto>
                 <div style={{ display: 'flex', flexDirection: 'row' }}>
                     <BotaoHeader_pgto style={{ backgroundColor: '#808080'}}>Novo Cliente</BotaoHeader_pgto>
                     <BotaoHeader_pgto onClick={toggleNovoClienteVisivel}>Voltar</BotaoHeader_pgto>

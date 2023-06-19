@@ -1,9 +1,9 @@
-import {Container,Enviar,Sair,Titulo,Formulario,Field,input_data} from "./Style.js";
+import {Container,Enviar,Sair,Titulo,Formulario,Field,input_data,h3} from "./Style.js";
 import ImagemX from "../../imagens/sair.png" ;
 
 const NovoCliente = ( ) => (
     <Container>
-        <Titulo><h1>Novo Cliente</h1></Titulo>
+        <Titulo><h2>Novo Cliente</h2></Titulo>
         <Sair><img src={ImagemX} alt="ImagemX" style={{paddingLeft:"7px",paddingTop:"5px"}}/></Sair>
         <Formulario>
         <Field>
@@ -15,7 +15,7 @@ const NovoCliente = ( ) => (
         <input style={input_data}></input>
         </Field>
         <Field>
-            <h3>CPF/Cnpj</h3>
+            <h3>CPF/CNPJ</h3>
         <input style={input_data}></input>
         </Field>
         <Field>
@@ -23,7 +23,7 @@ const NovoCliente = ( ) => (
         <input style={input_data}></input>
         </Field>
         </Formulario>
-        <Enviar><p style={{marginTop:"10px",fontWeight:"bolder",fontSize:"30px"}}>Enviar</p></Enviar>
+        <Enviar><p style={{marginTop:"10px",fontWeight:"bolder",fontSize:"25px"}}>Enviar</p></Enviar>
     </Container>
 );
 

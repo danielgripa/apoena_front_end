@@ -3,14 +3,21 @@ import Dispositivo  from "../../utils";
 import React, { useState } from 'react';
 
 const Container = styled.div`
-    background-color: #e1e1ff;
-    width: 80%;
-    height: 90%;
+    position: relative;
+    background-color: #f1f1f1;
+    margin-top: 50px;
+    width: 70%;
+    height: 500px;
     left:10%;
     top: 5%;
     border-radius:10px;
     border: 2px solid black;
     box-shadow: -4px 4px 14px 1px rgba(0, 0, 0, 0.5);
+
+    @media screen and (min-width: ${Dispositivo.smallMobile}px) {
+        width:80%;
+        height: 400%;
+    };
 `;
 
 const NomeEmail = styled.div`
@@ -24,7 +31,7 @@ const Cpf = styled.div`
   display: flex;
   flex-direction: column;
     padding-left: 4%;
-    margin-top: 4px;,
+    margin-top: 4px;
     margin-bottom: 4px;
 `;
 
@@ -32,61 +39,75 @@ const Endereco = styled.div`
   display: flex;
   flex-direction: column;
     padding-left: 4%;
-    margin-top: 4px;,
+    margin-top: 4px;
     margin-bottom: 4px;
 `;
 
 const Container2 = styled.div`
-    background-color: #320019;
-    width: 80%;
+    position: absolute;
+    background-color: #5B1F53;
+    width: 50%;
     height: 35%;
-    left:1%;
-    bottom:30%;
+    left:10%;
+    bottom:100px;
     border-radius: 10px;
     border: 2px solid black;
-
+    @media screen and (min-width: ${Dispositivo.tablet}px) {
+        left:100px;
+        width:60%;
+        height: 150%;
+    };
     @media screen and (min-width: ${Dispositivo.smallMobile}px) {
-        width:70%;
-        height:25%;
-        left:10%;
-        bottom:35%;
+      width: 70%;
+    height: 35%;
+    left: 15%;
+    bottom: 35%;
     };
 `;
 
 const AdicionarItem = styled.div`
-    background-color: blue;
+    position: absolute;
+    background-color: #5B1F53;
     width: 120px;
     height: 25px;
-    left: 20%;
-    bottom: 22%;
+    bottom: -30%;
     text-align: center;
-    border: 3px solid black;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: -4px 4px 14px 1px rgba(0, 0, 0, 0.5);
+    color: white;
 `;
 
 const Salvar = styled.div`
-    background-color: greenyellow;
+    position: absolute;
+    background-color: #6d1f53;
     width: 120px;
     height: 25px;
-    left:75%;
-    bottom:10%;
+    left:100%;
+    bottom:5%;
+    border-radius: 10px;
     text-align: center;
+    justify-content: center;
+    border:4px solid black;
+    color: white;
 
     @media screen and (min-width: ${Dispositivo.smallMobile}px) {
         width:50px;
         height: 50px;
-        left:75%;
+        left:80%;
         bottom:10%;
     };
 `;
 
 const MetodoPagamento = styled.div`
-    background-color: #320019;
+    position: absolute;
+    background-color: #5B1F53;
     width: 50%;
-    height: 15%;
-    left:50px;
-    bottom:5%;
+    left: 10%;
+    bottom: 5%;
     border-radius: 10px;
     border: 2px solid black;
+    color: white;
 `;
 
 function Dropdown() {
@@ -98,11 +119,11 @@ function Dropdown() {
   
     return (
       <div className="dropdown">
-        <button className="dropbtn" onClick={toggleMenu} style={{paddingTop:"10px",width:"100%",backgroundColor:"#f1f1f1"}}>
+        <button className="dropbtn" onClick={toggleMenu} style={{paddingTop:"10px",width:"100%",backgroundColor:"#5B1F53",color: "white"}}>
           Método De Pagamento
         </button>
         {isOpen && (
-          <div className="dropdown-content" style={{backgroundColor:"#ffff"}}>
+          <div className="dropdown-content" style={{backgroundColor:"#5B1F53"}}>
             <p>Pix</p>
             <p>Cartão De Crédito</p>
             <p>Boleto</p>

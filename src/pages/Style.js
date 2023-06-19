@@ -122,6 +122,9 @@ const DivNovoCliente = styled.div`
 `;
 
 const DivNovaFatura = styled.div`
+
+    height: 200px;
+    width:100%;
     &.oculto {
       display: none;
     };

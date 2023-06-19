@@ -1,10 +1,16 @@
 import styled from "styled-components";
 import Dispositivo  from "../../utils";
 
+
+
+const h3={
+    margintop:"1px",
+
+};
 const input_data = {
     width: '100%',
-    height: '20%',
-    backgroundColor:'#4CAF50',
+    height: '30%',
+    backgroundColor:'#5B1F53',
     color: 'white',
     /*padding: '14px 20px',*/
     margin: '0px 0',
@@ -24,22 +30,25 @@ const Formulario = styled.div`
     flex-direction: column;
     height: 100%;
     width: 80%;
-    margin-left: 10%;
-    justify-content: center;
+    margin-left: 5%;
+    margin-top:0%;
     font-size:15px;
+    margin-top: 0.5px;
+    flex-wrap: wrap;
 
     @media screen and (max-width: 1080px){
-        font-size:20px;
-        height: 100%;
+        font-size: 15px;
+        height: 67%;
         width: 80%;
     };
 
     @media screen and (max-width: 480px) {
-        font-size: 40px;
-        height: 100%;
+        font-size: 20px;
+        height: 60%;
         width: 80%;
         justify-content: center;
-        margin-bottom:10px;
+        margin-bottom:1px;
+        margin-top:1px;
     };
 `;
 
@@ -53,13 +62,16 @@ const Field = styled.div`
 `;
 
 const Container = styled.div`
-    background-color: #e1e1ff;
+    position: absolute;
+    background-color:white;
     width: 75%;
-    height: 90%;
+    height: 100%;
     left: 10%;
-    top: 10%;
+    top: 30%;
+    margin-left: 0%;
     border-radius:10px;
-    box-shadow: -4px 4px 14px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: -4px 4px 14px 1px rgba(91, 31, 83, 0.5);
+    border: 4px solid #5B1F53;
 
     &.oculto {
         display: none;
@@ -67,21 +79,23 @@ const Container = styled.div`
 `;
 
 const Enviar = styled.div`
-    background-color: grey;
-    width: 80%;
-    height: 10%;
-    left: 10%;
-    bottom: 10px;
-    border-radius: 8px;
+    position: absolute;
+    background-color: #5B1F53;
+    width: 100%;
+    height: 50px;
+    border-radius: 2px;
     text-align: center;
+    bottom: 0%;
+    border: 0.5px solid #5B1F53;
 `;
 
 const Sair= styled.div`
+    position:absolute;
     width: 30px;
     height: 30px;
     background-color:#f1f1f1;
-    left: 900px;
-    top: 25px;
+    right: 5%;
+    top:5%;
     border-radius: 20px;
     vertical-align:bottom;
 
@@ -100,8 +114,8 @@ const Titulo = styled.div`
     };
 
     @media screen and (max-width: 480px) {
-        font-size: 35px;
+        font-size: 15px;
         bottom:1350px;
     };
 `;
-export {Container,Enviar,Sair,Titulo,Formulario,Field,input_data}
+export {Container,Enviar,Sair,Titulo,Formulario,Field,input_data,h3}

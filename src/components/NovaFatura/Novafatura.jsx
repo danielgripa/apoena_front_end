@@ -5,8 +5,8 @@ const NovaFatura = ( props ) => (
       <h3 style={{paddingLeft:"25px",marginBottom:"0.5%"}}>Nova Fatura</h3>
         <h5 style={{paddingLeft:"5%",marginTop:"4px",marginBottom:"4px"}}>Enviar Para</h5>
         <NomeEmail>
-          <p>{props.nome}</p>
-          <p>{props.email}</p>
+          <div style={{margin:"0px"}}>{props.nome}</div>
+          <div style={{margin:"0px"}}>{props.email}</div>
         </NomeEmail>
 
         <h5 style={{paddingLeft:"4%",marginTop:"4px",marginBottom:"4px"}}>Pessoa Fisica/Juridica</h5>
@@ -19,9 +19,8 @@ const NovaFatura = ( props ) => (
           {props.endereco}
         </Endereco>
         
-        <Container2></Container2>
-        <AdicionarItem >Adicionar Item</AdicionarItem>
-        <Salvar>Salvar</Salvar>
+        <Container2><AdicionarItem >Adicionar Item</AdicionarItem></Container2>
+        <Salvar>Emitir Fatura</Salvar>
         <MetodoPagamento><Dropdown></Dropdown></MetodoPagamento>
         
     </Container>
