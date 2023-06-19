@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/apoena_front_end/static/css/main.e6c13ad2.css",
-    "main.js": "/apoena_front_end/static/js/main.1bb51cec.js",
+    "main.css": "/apoena_front_end/static/css/main.8bbd8e1c.css",
+    "main.js": "/apoena_front_end/static/js/main.f005a1e2.js",
     "static/js/787.f5dcaafa.chunk.js": "/apoena_front_end/static/js/787.f5dcaafa.chunk.js",
+    "static/media/Checkout-Desktop.png": "/apoena_front_end/static/media/Checkout-Desktop.597d575132fea37d6f6f.png",
     "static/media/card_comparativo.png": "/apoena_front_end/static/media/card_comparativo.5e2d7baeec2ddfef1a21.png",
     "index.html": "/apoena_front_end/index.html",
-    "main.e6c13ad2.css.map": "/apoena_front_end/static/css/main.e6c13ad2.css.map",
-    "main.1bb51cec.js.map": "/apoena_front_end/static/js/main.1bb51cec.js.map",
+    "main.8bbd8e1c.css.map": "/apoena_front_end/static/css/main.8bbd8e1c.css.map",
+    "main.f005a1e2.js.map": "/apoena_front_end/static/js/main.f005a1e2.js.map",
     "787.f5dcaafa.chunk.js.map": "/apoena_front_end/static/js/787.f5dcaafa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.1bb51cec.js"
+    "static/css/main.8bbd8e1c.css",
+    "static/js/main.f005a1e2.js"
   ]
 }
